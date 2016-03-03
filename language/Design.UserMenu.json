@@ -1,0 +1,10 @@
+{
+	"de-DE":
+	{
+		"profile": "profile",
+		"settings": "settings",
+		"inviteFriends": "to invite friends",
+		"logout": "log out",
+		"userProgress": "progress: %1% to Level %2"
+	}
+}

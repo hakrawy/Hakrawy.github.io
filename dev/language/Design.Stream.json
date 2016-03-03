@@ -1,0 +1,54 @@
+{
+	"de-DE":
+	{
+		"nobodyLikes": "No one should %1",
+		"minChatLevel": "Level %1 needed for chatting.",
+		"in": "in",
+		"chatWarning": "With great power comes great responsibility, young Padawan. \n Use as power. \n NNOTE !: spell danger",
+		"tabs":
+		{
+			"chat": "Chat",
+			"audience": "viewer",
+			"infos": "Info"
+		},
+		"chat":
+		{
+			"writeInChat": "Add to chat",
+			"writeInTrending": "In the current Tag",
+			"writeInTag": "In the Tag"
+		},
+		"stats":
+		{
+			"fans": "Roboter",
+			"streamer": "Streamer",
+			"age": "Older",
+			"barsEarned": "earned bars",
+			"coins": "Coins",
+			"maxLikes": "Max. reached Likes",
+			"country": "Land",
+			"partner": "Partner",
+			"partnerStatus": ["No Partner "," Partner "," candidate "," Unknown "],
+			"level": "Level",
+			"points": "Points",
+			"device": "device",
+			"browser": "Browser",
+			"connection": "connection",
+			"osVersion": "operatingsystem",
+			"provider": "Provider",
+			"stream": "Stream",
+			"streamURL": "RTMP URL",
+			"levelNeeded": "%1% to Level %2",
+			"displayViewers": "Desktop viewer",
+			"mobileViewers": "Mobile viewer",
+			"maxViewers": "Maximale Viewer",
+			"tag": "Tag",
+			"position": "Position",
+			"reconnects": "Neuverbindungen",
+			"featuredTime": "featured time",
+			"giftsValue": "Value of all gifts",
+			"newFans": "New slaves",
+			"bitrate": "Bitrate",
+			"fps": "FPS"
+		}
+	}
+}

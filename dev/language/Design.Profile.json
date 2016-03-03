@@ -1,0 +1,31 @@
+{
+	"de-DE":
+	{
+		"previousBroadcast":
+		{
+			"backToProfile": "Back to profile",
+			"rtmpDump": "Show rtmpdump command"
+		},
+		"dashboard":
+		{
+			"post": "send",
+			"remove": "Delete",
+			"like": "I like it!",
+			"unlike": "I do not like it anymore!",
+			"otherLikes": "Like% 1 others."
+		},
+		"tabs":
+		{
+			"dashboard": "Wall",
+			"previousBroadcasts": "Previous streams",
+			"fans": "%1 slaves",
+			"fansOf": "From% 1 slave"
+		},
+		"fan": "be a slave",
+		"unfan": "Remove slave",
+		"location": "place",
+		"broadcastsCount": "listens to date",
+		"dateCreated": "Created on",
+		"toLive": "Go Live Stream"
+	}
+}

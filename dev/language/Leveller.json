@@ -1,0 +1,19 @@
+{
+	"de-DE":
+	{
+		"title": "Leveller",
+		"desiredLevel": "desired level",
+		"levellerActive": "enable Leveller",
+		"currentTask": "current task",
+		"level": "Level",
+		"waiting": "worth...",
+		"leveling": "Leveln...",
+		"renaming": "Name restore...",
+		"finished": "done!",
+		"banned": "You are banned and can not level up.",
+		"loginNeeded": "You must be logged in to level to.",
+		"authNeeded": "be connected to your account must be either with Instagram (recommended), Facebook or Google+.",
+		"warningTitle": "Attention!",
+		"warning": "The Levellers leads after a certain time to highway. To bypass a Autobann, it is sufficient to log off and re-register. The account is then again at level 1."
+	}
+}
