@@ -1,15 +1,15 @@
 ﻿{
 	"de-DE": {
 		"langCode": "de-DE",
-		"intoDark": "In den Schatten!",
-		"intoLight": "Ins Licht!",
-		"fans": "Sklaven",
+		"intoDark": "Run the script!",
+		"intoLight": "Into the Light!",
+		"fans": "Roboter",
 		"numberSeperator": ".",
-		"trendingPeople": "Besonders bedürftig",
-		"editorsPick": "Auserwählte",
-		"friends": "Verfolgte",
-		"trendingTags": "Erbärmliche Tags",
-		"viewers": "Zuschauer",
+		"trendingPeople": "Especially in need",
+		"editorsPick": "chosen",
+		"friends": "followed",
+		"trendingTags": "wretched Tags",
+		"viewers": "viewer",
 		"countries": [{
 			"name": "Afghanistan",
 			"alpha-2": "AF",
