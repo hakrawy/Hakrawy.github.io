@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name Hakrawy
+// @name JuhNau DarkMode
 // @description Hides your presence within younow streams and offer some nice features to troll streamers.
-// @version 0.6.4
+// @version 0.6.3
 // @match *://younow.com/*
 // @match *://www.younow.com/*
 // @namespace https://github.com/Hakrawy/hakrawy.github.io
@@ -129,7 +129,7 @@ function main(w)
                 jsonp: "callback",
                 method: "POST",
                 contentType: "application/json;charset=UTF-8",
-                data: "{\"params\":\"query=&hitsPerPage=300&page="+(this.lastMassLikePage+1)+"&attributesToHighlight=none\"}",
+                data: "{\"params\":\"query=&hitsPerPage=200&page="+(this.lastMassLikePage+1)+"&attributesToHighlight=none\"}",
                 processData: false,
                 headers: {
                     "X-Algolia-API-Key":this.youNow.config.settings.PeopleSearchApiKey,
@@ -160,7 +160,7 @@ function main(w)
                 }
             });
             this.lastMassLikePage = (this.lastMassLikePage+1);
-            this.massLikeTimer = 10000;
+            this.massLikeTimer = 1000;
         }
     };
     
@@ -224,7 +224,7 @@ function main(w)
         {
             var self = this;
             $.ajax({
-                url: 'https://www.younow.com/php/api/channel/getLocationOnlineFansOf/numberOfRecords=300/channelId='+this.youNow.session.user.userId, 
+                url: 'https://www.younow.com/php/api/channel/getLocationOnlineFansOf/numberOfRecords=200/channelId='+this.youNow.session.user.userId, 
                 jsonp: "callback",
                 method: "GET",
                 dataType: "json",
@@ -446,7 +446,7 @@ function main(w)
     {
         var self = this;
         $.ajax({
-            url: 'https://cdn2.younow.com/php/api/younow/dashboard/locale=de/trending=300', 
+            url: 'https://cdn2.younow.com/php/api/younow/dashboard/locale=de/trending=200', 
             jsonp: "callback",
             method: "GET",
             dataType: "json",
@@ -691,7 +691,7 @@ function main(w)
                 jsonp: "callback",
                 method: "POST",
                 contentType: "application/json;charset=UTF-8",
-                data: "{\"params\":\"query="+this.elements["intoTag"].val()+"&hitsPerPage=100&page=0&attributesToHighlight=none&restrictSearchableAttributes=tag\"}",
+                data: "{\"params\":\"query="+this.elements["intoTag"].val()+"&hitsPerPage=200&page=0&attributesToHighlight=none&restrictSearchableAttributes=tag\"}",
                 processData: false,
                 headers: {
                     "X-Algolia-API-Key":this.youNow.config.settings.PeopleSearchApiKey,
@@ -1047,7 +1047,7 @@ function main(w)
         if (this.currentSearch.query == null)
         {
             $.ajax({
-                url: 'https://www.younow.com/php/api/younow/trendingUsers/numberOfRecords=100/startFrom='+(this.currentSearch.page * 100)+'/locale=de', 
+                url: 'https://www.younow.com/php/api/younow/trendingUsers/numberOfRecords=200/startFrom='+(this.currentSearch.page * 100)+'/locale=de', 
                 jsonp: "callback",
                 method: "GET",
                 processData: false,
@@ -1071,7 +1071,7 @@ function main(w)
                 jsonp: "callback",
                 method: "POST",
                 contentType: "application/json;charset=UTF-8",
-                data: "{\"params\":\"query="+this.currentSearch.query.substring(1)+"&hitsPerPage=100&page="+this.currentSearch.page+"&attributesToHighlight=none&restrictSearchableAttributes=tag\"}",
+                data: "{\"params\":\"query="+this.currentSearch.query.substring(1)+"&hitsPerPage=200&page="+this.currentSearch.page+"&attributesToHighlight=none&restrictSearchableAttributes=tag\"}",
                 processData: false,
                 headers: {
                     "X-Algolia-API-Key":this.youNow.config.settings.PeopleSearchApiKey,
@@ -1092,7 +1092,7 @@ function main(w)
                 jsonp: "callback",
                 method: "POST",
                 contentType: "application/json;charset=UTF-8",
-                data: "{\"params\":\"query="+this.currentSearch.query+"&hitsPerPage=100&page="+this.currentSearch.page+"&attributesToHighlight=none\"}",
+                data: "{\"params\":\"query="+this.currentSearch.query+"&hitsPerPage=200&page="+this.currentSearch.page+"&attributesToHighlight=none\"}",
                 processData: false,
                 headers: {
                     "X-Algolia-API-Key":this.youNow.config.settings.PeopleSearchApiKey,
@@ -1133,7 +1133,7 @@ function main(w)
             }
         }
         else {
-            if (json.nbHits < 100)
+            if (json.nbHits < 200)
                 this.currentSearch.finished = true;
             if (this.currentSearch.titleEl.html() == "")
                 this.currentSearch.titleEl.html(this.parseNumber(json.nbHits) + " " + this.language["usersFound"]); 
@@ -1241,7 +1241,7 @@ function main(w)
                 jsonp: "callback",
                 method: "POST",
                 contentType: "application/json;charset=UTF-8",
-                data: "{\"params\":\"query="+this.config.chatbot.tag+"&hitsPerPage=100&page=0&attributesToHighlight=none&restrictSearchableAttributes=tag\"}",
+                data: "{\"params\":\"query="+this.config.chatbot.tag+"&hitsPerPage=200&page=0&attributesToHighlight=none&restrictSearchableAttributes=tag\"}",
                 processData: false,
                 headers: {
                     "X-Algolia-API-Key":this.youNow.config.settings.PeopleSearchApiKey,
@@ -1509,7 +1509,7 @@ function main(w)
             active: false,
             tag: "deutsch",
             knownIdiots: [
-                "Hakrawy",
+                "braui.93",
             ],
             messages: [
                 "Was für Musik hörst du so?",
