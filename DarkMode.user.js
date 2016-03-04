@@ -1509,7 +1509,7 @@ function main(w)
             active: false,
             tag: "deutsch",
             knownIdiots: [
-                "braui.93",
+                "Hakrawy",
             ],
             messages: [
                 "Was für Musik hörst du so?",
