@@ -25,9 +25,7 @@ window[window.dID][window.dID+"a"]("bootDesignStream", function(callback) {
 				self.config.Design.Stream.pusher.disconnect();
 				self.config.Design.Stream.pusher = null;
 			}
-			self[self.dID]("removeTick", "updateStream");
-			self[self.dID]("removeTick", "updateStreamInfo");
-			self[self.dID]("removeTick", "updateStreamViewer");
+			
 		}
 	});
 	callback();
