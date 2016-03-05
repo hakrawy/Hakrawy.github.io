@@ -54,6 +54,7 @@ function main(w, dID, clientID, folder)
 					"Leveller",
 					"AccountRecreator",
 					"Language",
+					"MacroManager",
 				]);
 			}
 		});
