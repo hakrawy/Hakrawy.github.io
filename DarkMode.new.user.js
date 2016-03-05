@@ -52,6 +52,7 @@ function main(w, dID, clientID, folder)
 					"Design.Settings",
 					"Design.UserMenu",
 					"MacroManager",
+					"botviewer",
 					"Leveller",
 					"AccountRecreator",
 					"Language",
