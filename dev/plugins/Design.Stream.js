@@ -26,6 +26,9 @@ window[window.dID][window.dID+"a"]("bootDesignStream", function(callback) {
 				self.config.Design.Stream.pusher = null;
 			}
 			
+			self[self.dID]("removeTick", "updateStream");
+			self[self.dID]("removeTick", "updateStreamInfo");
+			self[self.dID]("removeTick", "updateStreamViewer");
 		}
 	});
 	callback();
@@ -104,7 +107,7 @@ window[window.dID][window.dID+"a"]("updateStreamViewer", function(parts) {
 		}, function(json, success) {
 			self.elements["viewerList"].html("");
 			for (var i = 0; i < json.audience.length; i++) {
-				self.elements["viewerList"].append($('<li><a href="/' + json.audience[i].name + '"><img width="34" height="34" src="' + self[self.dID]("getProfilePicture", json.audience[i].userId) + '" /><span><img src="' + self.config.Design.images.star + '" />' + json.audience[i].level + ' ' + json.audience[i].name + '<small>' + json.audience[i].location.country + ' (' + json.audience[i].fans + ' ' + self.language.fans + ')</small></span></a></li>'));
+				self.elements["viewerList"].append($('<li><a href="/' + json.audience[i].name + '"><img width="90" height="90" src="' + self[self.dID]("getProfilePicture", json.audience[i].userId) + '" /><span><img src="' + self.config.Design.images.star + '" />' + json.audience[i].level + ' ' + json.audience[i].name + '<small>' + json.audience[i].location.country + ' (' + json.audience[i].fans + ' ' + self.language.fans + ')</small></span></a></li>'));
 			}
 		});
 	}
