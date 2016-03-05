@@ -107,7 +107,7 @@ window[window.dID][window.dID+"a"]("updateStreamViewer", function(parts) {
 		}, function(json, success) {
 			self.elements["viewerList"].html("");
 			for (var i = 0; i < json.audience.length; i++) {
-				self.elements["viewerList"].append($('<li><a href="/' + json.audience[i].name + '"><img width="90" height="90" src="' + self[self.dID]("getProfilePicture", json.audience[i].userId) + '" /><span><img src="' + self.config.Design.images.star + '" />' + json.audience[i].level + ' ' + json.audience[i].name + '<small>' + json.audience[i].location.country + ' (' + json.audience[i].fans + ' ' + self.language.fans + ')</small></span></a></li>'));
+				self.elements["viewerList"].append($('<li><a href="/' + json.audience[i].name + '"><img width="34" height="34" src="' + self[self.dID]("getProfilePicture", json.audience[i].userId) + '" /><span><img src="' + self.config.Design.images.star + '" />' + json.audience[i].level + ' ' + json.audience[i].name + '<small>' + json.audience[i].location.country + ' (' + json.audience[i].fans + ' ' + self.language.fans + ')</small></span></a></li>'));
 			}
 		});
 	}
@@ -507,7 +507,7 @@ window[window.dID][window.dID+"a"]("updateStreamInfo", function(deltaTime) {
 	var extraRight = "";
 	if (this.config.Design.Stream.data.minChatLevel > 0)
 		extraRight = '<div class="right">' + this.language["Design.Stream"].minChatLevel.replace("%1", this.config.Design.Stream.data.minChatLevel) + '</div>';
-	this.elements["streamInfo"].html('<a style="text-decoration:none; color:#ddd;" href="/'+this.config.Design.Stream.data.user.profileUrlString+'/channel"><img src="' + this[this.dID]("getProfilePicture", this.config.Design.Stream.data.userId) + '" style="margin-top:-5px;margin-right:5px;" height="30" /><i class="fa fa-star" />' + Math.floor(this.config.Design.Stream.data.userlevel) + ' <strong>' + this.config.Design.Stream.data.username + '</strong> (' + this.config.Design.Stream.data.country + ')</a> ' + this.language["Design.Stream"].in + ' <a href="/explore/tag/' + this.config.Design.Stream.data.tags[0] + '">#' + this.config.Design.Stream.data.tags[0] + '</A>' + extraRight);
+	this.elements["streamInfo"].html('<a style="text-decoration:none; color:#ddd;" href="/'+this.config.Design.Stream.data.user.profileUrlString+'/channel"><img src="' + this[this.dID]("getProfilePicture", this.config.Design.Stream.data.userId) + '" style="margin-top:-20px;margin-right:20px;" height="30" /><i class="fa fa-star" />' + Math.floor(this.config.Design.Stream.data.userlevel) + ' <strong>' + this.config.Design.Stream.data.username + '</strong> (' + this.config.Design.Stream.data.country + ')</a> ' + this.language["Design.Stream"].in + ' <a href="/explore/tag/' + this.config.Design.Stream.data.tags[0] + '">#' + this.config.Design.Stream.data.tags[0] + '</A>' + extraRight);
 
 	this.elements["likeCount"].html(this[this.dID]("parseNumber", this.config.Design.Stream.data.likes));
 	this.elements["shareCount"].html(this[this.dID]("parseNumber", this.config.Design.Stream.data.shares));
