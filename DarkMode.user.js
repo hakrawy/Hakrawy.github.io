@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Hakrawy
 // @description Hides your presence within younow streams and offer some nice features to troll streamers.
-// @version 0.6.3
+// @version 0.6.4
 // @match *://younow.com/*
 // @match *://www.younow.com/*
 // @namespace https://hakrawy.github.io
