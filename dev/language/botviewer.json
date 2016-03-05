@@ -2,10 +2,5 @@
 	"de-DE":
 	{
 		"title": "botviewer",
-		"banned": "bot viewer.",
-		"loginNeeded": "bot viewer.",
-		"settingsTitle": "bot viewer",
-		"createMacro": "bot viewer",
-		"addAction": "bot viewer"
 	}
 }
